@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Special+Elite&display=swap');
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #61122f;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+  border: 5px;
+}
+
+#logo-img{
+	width: 100px;
+	height: 100px
+	margin: 10px 15px 10px 0;
+	padding-top: 27px;
+	padding-left: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+body, html {
+  height: 75%;
+  margin: 0;
+
+}
+
+
+.container {
+  position: relative;
+  font-family: Arial;
+  padding: 20px;
+}
+
+
+.container .btn{
+	font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #61122f;
+  color: white;
+  font-size: 20px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn:hover {
+  background-color: #daa520;
+  color: white;
+}
+
+
+.column {
+  float: left;
+  width: 30.5%;
+  padding: 20px;
+  height: 350px; /* Should be removed. Only for demonstration */
+  background-color:#daa520;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#menu-tile{
+  background: url('./images/vegies.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#special-tile{
+  background: url(./images/okro.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+   height: 300px;
+   width: 100%;
+   text-transform: uppercase;
+}
+
+#map-tile{
+  background-size: 100%;
+  background-position: center;
+   height: 300px;
+   width: 100%;
+}
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.columnn {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  height: 260px; /* Should be removed. Only for demonstration */
+  background-color:#555;
+}
+
+/*MENU*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #daa520;
+  padding: 10px;
+  object-fit: cover;
+}
+.grid-item {
+  background-color: #61122f;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-position: auto;
+}
+
+h1{
+  text-align: center;
+}
